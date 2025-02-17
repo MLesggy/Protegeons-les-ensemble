@@ -29,6 +29,10 @@ header{
     width: fit-content;
     margin: 15px;
 }
+.don{
+    font-weight: 600;
+    font-size: 16px;
+}
 
 /* Mise en page de la section main  */
 
@@ -50,4 +54,84 @@ h1{
 p{
     font-size: 20px;
     text-align: center;
+}
+/* Mise en page de la deuxième section, celle pour le don  */
+.sectionDon{
+    border: solid 4px yellow;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+h2{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.cadreDon{
+    border: solid 4px orangered;
+    align-self: center;
+    padding: 10px;
+}
+
+.btnDon{
+    background-color: white;
+    border: solid 2px #D9D9D9;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.cadreTemps{
+    border: solid 4px blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.btnTemps{
+    background-color: #F3F1F1;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.validerDon{
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 45%;
+    position: absolute;
+    left: 28%;
+    padding: 10px;
+    font-weight: 700;
+}
+/* Mise en page de la deuxième section, celle de la mission de l'asso */
+.mission{
+    background-color: #EDFDF4;
+    margin-top: 60px ;
+    border: solid 4px black;
+    z-index: 1;
+}
+.notreMission{
+    padding: 100px;
+    display: flex;
+    border: solid 4px purple;
+  
+}
+.notreMission img{
+    border-radius: 20px 0 0 20px;
+}
+
+/*  Mise en page de la troisième section avec le carrousel d'image  */
+
+.gridContainer{
+border: solid 4px greenyellow;
+
+
+}
+.tailleMin{
+    width: 360px;
+    height: 185px;
 }
