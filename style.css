@@ -125,13 +125,25 @@ h2{
 }
 
 /*  Mise en page de la troisième section avec le carrousel d'image  */
-
-.gridContainer{
-border: solid 4px greenyellow;
-
+.galerie{
+    border: solid 4px cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin: 70px;
+    height: 700px;
+}
+.container{
+    border: solid 4px greenyellow;
 
 }
 .tailleMin{
     width: 360px;
     height: 185px;
+    border-radius: 10px;
+}
+.tailleMax{
+    width: cover;
+    border-radius: 10px;
 }
