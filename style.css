@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*  Mise en forme du header  */
+header{
+    background-color: #057858;
+    border: solid 4px black;
+}
+.textHeader{
+    border: solid 4px blue;
+}
