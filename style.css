@@ -29,3 +29,25 @@ header{
     width: fit-content;
     margin: 15px;
 }
+
+/* Mise en page de la section main  */
+
+.hautDePage{
+    background-image: url(./Images/ImageHaut.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+h1{
+    font-size: 90px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
