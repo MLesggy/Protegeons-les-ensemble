@@ -124,7 +124,8 @@ h2{
     border-radius: 20px 0 0 20px;
 }
 
-/*  Mise en page de la troisième section avec le carrousel d'image  */
+/*  Mise en page de la quatrième section avec le carrousel d'image  */
+
 .galerie{
     border: solid 4px cyan;
     display: flex;
@@ -132,7 +133,8 @@ h2{
     justify-content: center;
     align-items: center;  
     margin: 70px;
-    height: 700px;
+    width: fit-content;
+    gap: 15px;
 }
 .container{
     border: solid 4px greenyellow;
@@ -144,6 +146,6 @@ h2{
     border-radius: 10px;
 }
 .tailleMax{
-    width: cover;
-    border-radius: 10px;
+
+  object-fit: cover; /* Permet de garder une taille homogène */
 }
