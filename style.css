@@ -7,8 +7,25 @@
 /*  Mise en forme du header  */
 header{
     background-color: #057858;
+    color: white;
+    text-decoration: none;
     border: solid 4px black;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .textHeader{
     border: solid 4px blue;
+    width: fit-content;
+    margin: 15px;
+    word-spacing: 40px;
+}
+.btn{
+    color: white;
+    background-color: red;
+    border-radius: 10%;
+    padding: 5px;
+    font-weight: 700;
+    width: fit-content;
+    margin: 15px;
 }
