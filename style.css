@@ -194,3 +194,36 @@ h2{
     flex-direction: row;
     justify-content: space-around;
 }
+/* Mise en page de la sixième section: témoignages  */
+
+.boiteTemoignages img{
+    width: 350px;
+    height: 160px;
+}
+.boiteTemoignages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    font-size: 15px; 
+}
+.temoin1{
+    border: solid 4px cyan;
+    align-self: center;
+    height: 300px;
+    width: 350px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+}
+.temoin2{
+    align-self: center;
+    height: 300px;
+    width: 350px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+}
+.temoin3{
+    border: solid 4px red;
+    align-self: center;
+    height: 300px;
+    width: 350px;  
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+}
