@@ -43,6 +43,29 @@ header p{
 /* PArtie principale  */
 h1{
     text-align: center;
-    margin-top: 35px;
+    margin-top: 20px;
     font-weight: 800;
+}
+.cadreContact{
+    margin: 180px;
+    border: solid 4px black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: -3px 22px 15px 13px rgba(0,0,0,0.11);
+}
+input{
+    border-radius: 5px;
+    height: 40px;  
+}
+.btnVert{
+    color:white;
+    background-color: #3e8163;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.error{
+    color: red;
 }
