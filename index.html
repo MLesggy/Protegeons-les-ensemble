@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protegeons les ensemble</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protegeons les ensemble</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    </head>
+    <body>
+        <!-- Banniere de haut de page avec nav -->
+        <header> 
+            <div class="textHeader"> 
+                <a href="index.html" class="manrope-uniquifier"> Acceuil 
+                </a> 
+                <a href="page2.html" class="manrope-uniquifier"> Contact 
+                </a>
+            </div>
+            <div> 
+                <button class="btn manrope-uniquifier">♡ Faire un don </button>
+            </div>
+        </header>
 
-<!-- Banniere de haut de page avec nav -->
-<header> 
+        <section class="imageFiltree"> 
+            <div> 
+                <h1 class="manrope-uniquifier"> Protegeons-les ensemble </h1>
+                <p class="manrope-uniquifier centrer"> Chaque don compte pour leur offrir une vie meilleure </p>
+            </div>
+        </section>
+        <!--  Troisième section: les dons -->
+        <h2 class="manrope-uniquifier"> Faites un don</h2>
+        <section class="sectionDon"> 
+            <div class="cadreDon"> 
+                <button class= "btnDon" id="don1"> <span class="don"> 10€ </span> <br> permet de nourrir 5 animaux <br>pendant une journée </button>
+                <button class="btnDon" id="don2"> <span class="don"> 20€ </span> <br> permet d'heberger un animal <br>sauvage pendant une nuit  </button>
+                <button class="btnDon" id="don3"> <span class="don">50€ </span><br> permet de financer les soins <br>vétérinaires complet pour un animal  </button> 
+            </div>
+            <div class="cadreTemps"> 
+                <button class="btnTemps" id="uneFois"> Une fois </button>
+                <button class="btnTemps" id="mensuel"> Mensuel </button>
+                <button class="btnTemps" id="annuel"> Annuel </button>
+            </div>
+            <div> 
+            <button class="validerDon" id="validerDon"> <div id="leDon">♡ Faire un don de ... </div></button>
+            </div>
+        </section>
 
-    <div class="textHeader"> 
-        <a href="index.html"> Acceuil  </a> 
-        <a href="page2.html"> Contact </a>
-    </div>
-    <div> 
-     <button class="btn">♡ Faire un don </button>
-</div>
-</header>
+        <!-- Quatrième section: Mission -->
+        <section class="mission"> 
+            <div class="notreMission">
+                <img src="./Images/Mission.png" alt="image d'un bébé golden retriever qui court dans l'herbe">
+                <div class="manrope-uniquifier formPara"> 
+                <p class="manrope-uniquifier"> <span class="titreMission"> Notre Mission </span></p><br>
+                <p>Depuis 2010, Quatres Pattes oeuvre sans relache pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en en détresse et sensibiliser le public à la cause animale. </p> <br>
+                <p>Chaque année, nous prennons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de famille d’acceuil, et nos partenariats avec des refuges, nous leur offorons une seconde chance </p> <br>
+                <p>Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous. </p>
+                </div>
+            </div>
+        </section>
+        <!-- Quatrieme section avec le carroussel d'image  -->
+        <h2 class="manrope-uniquifier"> Histoires de réussite </h2>
+        <section> 
+            <div class="conteneurGalerie"> 
+                <img src="./Images/LunaZoom.png" class="imagePrincipale" alt="phot d'un chien mangeant son jouet">
+            </div>
+            <div class="miniature"> 
+                <img src="./Images/Luna.png" alt="">
+                <img src="./Images/Oscar.png" alt="">
+                <img src="./Images/Bouledogue.png" alt="">
+            </div>
 
-<section class="hautDePage"> 
-    <div> 
-<h1> Protegeons-les ensemble </h1>
-<p> Chaque don compte pour leur offrir une vie meilleure </p>
-    </div>
-</section>
-<h2> Faites un don</h2>
-<section class="sectionDon"> 
+        </section>
+<div class="espace"> </div>
 
-
-
-<div class="cadreDon"> 
-<button class= "btnDon" id="don1"> <span class="don"> 10€ </span> <br> permet de nourrir 5 animaux <br>pendant une journée </button>
-<button class="btnDon" id="don2"> <span class="don"> 20€ </span> <br> permet d'heberger un animal <br>sauvage pendant une nuit  </button>
-<button class="btnDon" id="don3"> <span class="don">50€ </span><br> permet de financer les soins <br>vétérinaires complet pour un animal  </button> 
-</div>
-
-<div class="cadreTemps"> 
-<button class="btnTemps" id="uneFois"> Une fois </button>
-<button class="btnTemps" id="mensuel"> Mensuel </button>
-<button class="btnTemps" id="annuel"> Annuel </button>
-</div>
-
-<div> 
-<button class="validerDon" id="validerDon"> <div id="leDon">♡ Faire un don de ... </div></button>
-</div>
-</section>
-
-<section class="mission"> 
-
-    <div class="notreMission">
-        <img src="./Images/Mission.png" alt="image d'un bébé golden retriever qui court dans l'herbe">
-        <p> <span> Notre Mission </span> <br> Depuis 2010, Quatres Pattes oeuvre sans relache pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en en détresse et sensibiliser le public à la cause animale. <br> Chaque année, nous prennons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de famille d’acceuil, et nos partenariats avec des refuges, nous leur offorons une seconde chance <br> Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous. </p>
-    </div>
-
-</section>
-
-
-<!-- Quatrieme section avec le carroussel d'image  -->
-
-<h2> Hisoires de réussite </h2>
- <section class="galerie">
-
-<img id="imagePrincpiale" class="tailleMax" src="./Images/Luna.png" alt="Photo d'un chien qui grignotte son jouet">
-
-<div class="container">
-<img src="./Images/Luna.png" class=" tailleMin" alt="miniature de la phot d'un chien qui grignotte son jouet">
-<img src="./Images/Oscar.png" class=" tailleMin" alt="photo d'un chat avec un papillon sur le bout du museau">
-<img src="./Images/Bouledogue.png" class=" tailleMin" alt="photo d'un Bouledogue portant un sweat shirt">
-</div>
-</section>
-
-<!-- Cinquième section: Quizz -->
+        <!-- Cinquième section: Quizz -->
 
 <section class="quizz"> 
+    
 
-<h2> Testez vos connaissances </h2>
 
-<div class="boxQuizz"> 
 
-<div class="question1"> <p> Les associations gardent la majorité des dons pour leur fonctionnement</p><br>
-<button class="btnQuizz"> Vrai, les associations utilisent plus de 50% des dons <br>pour leurs frais de fonctionnement </button>
-<button class="btnQuizz"> Faux </button>
+<div class="boxQuizz" id="Quiz"> 
+<h2 class="manrope-uniquifier"> Testez vos connaissances </h2>
+
+<div class="question1"> <p class="don manrope-uniquifier"> Les associations gardent la majorité des dons pour leur fonctionnement</p><br>
+<button class="btnQuizz manrope-uniquifier" onclick="Nope()" id="opt1"> <span> Vrai, les associations utilisent plus de 50% des dons </span> 
+    <span> pour leurs frais de fonctionnement </span>
+</button>
+<button class="btnQuizz manrope-uniquifier" onclick="Yes()" id="opt2"> Faux </button>
 </div>
 
-<div class="question2"> <p> Les refuges ne prennent que les animaux en bonne santé </p><br> 
-<button class="btnQuizz"> Vrai, ils refusent les animaux malades car trop couteux </button>
-<button class="btnQuizz"> Faux </button>
+<div class="question2"> <p class="don manrope-uniquifier"> Les refuges ne prennent que les animaux en bonne santé </p><br> 
+<button class="btnQuizz" onclick="" id="opt3"> Vrai, ils refusent les animaux malades car trop couteux </button>
+<button class="btnQuizz"onclick="" id="opt4"> Faux </button>
 </div>
 
-<div class="question3"> <p> Les associations ont trop de moyen grace aux dons </p><br> 
-<button class="btnQuizz"> Vrai, elles reçoivent beaucoup d'argent des donateurs </button>
-<button class="btnQuizz"> Faux </button>
+<div class="question3"> <p class="don manrope-uniquifier"> Les associations ont trop de moyen grace aux dons </p><br> 
+<button class="btnQuizz" onclick="" id="opt5"> Vrai, elles reçoivent beaucoup d'argent des donateurs </button>
+<button class="btnQuizz"onclick="" id="opt6"> Faux </button>
+</div>
+<div id="resultQuiz"> </div> 
 </div>
 
-</div>
-
-<h2> Notre Impact </h2>
+<h2 class="manrope-uniquifier"> Notre Impact </h2>
 <div class="logos"> 
     <img src="./Images/LogoRefuge.png" alt="logo d'un refuge pour animaux">
     <img src="./Images/LogoPatoune.png" alt="logo de l'association">
@@ -109,31 +115,33 @@
 
 <!-- Sixième section: Temoignages -->
 <section> 
-<h2> Temoignages</h2>
+<h2 class="manrope-uniquifier"> Temoignages</h2>
 
 <div class="boiteTemoignages"> 
 <div class="temoin1">  
     <img src="./Images/ImageRefugeLyon.png" alt="image d'un chien et d'un chat qui se font un calin">
-    <figcaption> “Grâce aux dons, nous avons pu acceuillir plus de 20 animaux cette année et leur offrir une seconde chance”. <br> Refuges des Quatres Pattes - Lyon</figcaption>
+    <figcaption class="manrope-uniquifier texteTemoignage"> <br>“Grâce aux dons, nous avons pu acceuillir plus de 20 animaux cette année et leur offrir une seconde chance”. <br> </figcaption>
+    <p class="don texteTemoignage ">>Refuges des Quatres Pattes - Lyon </p>
 </div>
 
-<div class="temoin2"> 
+<div class="temoin1"> 
     <img src="./Images/ChatBicolor.png" alt="photo d'un chat bicolore">
-    <figcaption> “Le soutient de Quattre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.” <br> Sanctuaire Animal - Marseille </figcaption>
-     </div>
+    <figcaption class="manrope-uniquifier texteTemoignage"><br> “Le soutient de Quattre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.” </figcaption>
+    <p class="don texteTemoignage">Sanctuaire Animal - Marseille </p>
+     </div> 
 
-<div class="temoin3"> 
+<div class="temoin1"> 
     <img src="./Images/ImageRefugeParis.png" alt="photo d'un chat faisant un high five">
-   <figcaption> “Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.” <br> Refuge du Soleil - Paris </figcaption>
+   <figcaption class="manrope-uniquifier texteTemoignage"> <br>“Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”</figcaption> <br> <p class="don texteTemoignage">Refuge du Soleil - Paris</s>
 </div>
 
-
-
-
-
 </div>
-
 </section>
+
+<footer></footer>
+
+
+
 <script src="script.js"></script>
 </body>
 </html>
