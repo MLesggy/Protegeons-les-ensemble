@@ -3,22 +3,33 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+      text-decoration: none !important;
+      color: inherit;
+  }
+.manrope-uniquifier{
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 /*  Mise en forme du header  */
 header{
     background-color: #057858;
-    color: white;
-    text-decoration: none;
     border: solid 4px black;
     display: flex;
     justify-content: flex-end;
-
+    gap: 40px;
 }
 .textHeader{
     border: solid 4px blue;
+    color: white;
     width: fit-content;
+    align-self:flex-end;
     margin: 15px;
-    word-spacing: 40px;
+    word-spacing: 20px;
 }
 .btn{
     color: white;
@@ -26,7 +37,7 @@ header{
     border-radius: 10%;
     padding: 5px;
     font-weight: 700;
-    width: fit-content;
+    width: 150px;
     margin: 15px;
 }
 .don{
@@ -36,8 +47,9 @@ header{
 
 /* Mise en page de la section main  */
 
-.hautDePage{
+.imageFiltree{
     background-image: url(./Images/ImageHaut.png);
+    position: relative ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,16 +58,34 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+}
+.imageFiltree::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); 
+    z-index: 1;
+}
+.imageFiltree p,
+.imageFiltree h1 {
+    color: white;
+    position: relative;
+    z-index: 2;
 }
 h1{
-    font-size: 90px;
+    font-size: 70px;
 }
 p{
-    font-size: 20px;
+    font-size: 20px;    
+}
+.centrer{
     text-align: center;
 }
 /* Mise en page de la deuxième section, celle pour le don  */
+
 .sectionDon{
     border: solid 4px yellow;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -66,16 +96,18 @@ p{
 h2{
     color: black;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .cadreDon{
     border: solid 4px orangered;
     align-self: center;
     padding: 10px;
 }
-
+.don{
+    font-weight: 900;
+}
 .btnDon{
     background-color: white;
     border: solid 2px #D9D9D9;
@@ -83,7 +115,23 @@ h2{
     width: fit-content;
     border-radius: 10px;
     font-size: 10px;
+    cursor: pointer;
 }
+.cadreDon .btnDon:hover {
+    background-color: #EDFDF4;
+    border: solid 2px #2CAD43;
+}
+.btnDon.selected {
+    background-color: #EDFDF4; 
+    border: solid 2px #2CAD43;
+}
+.btnTemps.selected{
+    background-color: #2CAD43;
+}
+.cadreTemps .btnTemps:hover{
+    background-color: #6ACF6E;
+}
+
 .cadreTemps{
     border: solid 4px blue;
     display: flex;
@@ -96,6 +144,7 @@ h2{
     padding: 10px;
     margin: 15px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .validerDon{
     align-items: center;
@@ -106,13 +155,13 @@ h2{
     left: 28%;
     padding: 10px;
     font-weight: 700;
+    cursor: pointer;
 }
 /* Mise en page de la deuxième section, celle de la mission de l'asso */
 .mission{
     background-color: #EDFDF4;
     margin-top: 60px ;
     border: solid 4px black;
-    z-index: 1;
 }
 .notreMission{
     padding: 100px;
@@ -123,33 +172,43 @@ h2{
 .notreMission img{
     border-radius: 20px 0 0 20px;
 }
-
-/*  Mise en page de la quatrième section avec le carrousel d'image  */
-
-.galerie{
-    border: solid 4px cyan;
+.formPara{
+    border: solid 4px red;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
+    text-align: start;
+}
+.titreMission{
+    font-weight: 900;
+    font-size: 30px;
+    text-align: start;
+}
+/*  Mise en page de la quatrième section avec le carrousel d'image  */
+.conteneurGalerie{
+    border: solid 4px cyan;
+    display: flex;
     justify-content: center;
-    align-items: center;  
-    margin: 70px;
-    width: fit-content;
-    gap: 15px;
 }
-.container{
-    border: solid 4px greenyellow;
-
+.imagePrincipale{
+    width: 60%;
 }
-.tailleMin{
-    width: 360px;
-    height: 185px;
+.miniature{
+    border: solid, 4px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px
+}
+.miniature img{
+    width: 250px;
+    height: 120px;
     border-radius: 10px;
 }
-.tailleMax{
-
-  object-fit: cover; /* Permet de garder une taille homogène */
+.espace{
+    padding: 50px;
 }
-
 /*  Mise en forme de la cinquième section: quizz */
 
 .quizz{
@@ -165,13 +224,34 @@ h2{
 }
 .btnQuizz{
     align-self: center;
-    padding: 12px;
+    padding: 10px;
     font-size: 10px;
     border-radius: 10px;
     background-color: #F5F5F5;
     border: none;
     width: 370px;
     height: 50px;
+    cursor: pointer;
+}
+.btnQuizz:hover {
+    background-color: #f8eded;
+}
+.btnQuizz span{
+    display: block;
+}
+.btnQuizzCorrect{
+    background-color:  #EDFDF4;
+    align-self: center;
+    padding: 12px;
+    font-size: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 370px;
+    height: 50px;
+    cursor: pointer;
+}
+.btnQuizzFalse{
+    background-color: lightcoral;
 }
 .question1{
     border: solid 4px blueviolet;
@@ -199,6 +279,8 @@ h2{
 .boiteTemoignages img{
     width: 350px;
     height: 160px;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
 }
 .boiteTemoignages{
     display: flex;
@@ -208,22 +290,14 @@ h2{
     font-size: 15px; 
 }
 .temoin1{
-    border: solid 4px cyan;
+    border: solid 1px lightgray;
+    border-radius: 20px;
     align-self: center;
-    height: 300px;
+    height: 370px;
     width: 350px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+
 }
-.temoin2{
-    align-self: center;
-    height: 300px;
-    width: 350px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
-}
-.temoin3{
-    border: solid 4px red;
-    align-self: center;
-    height: 300px;
-    width: 350px;  
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+.texteTemoignage{
+    padding: 10px;
 }
