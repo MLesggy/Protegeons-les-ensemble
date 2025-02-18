@@ -43,8 +43,9 @@ header p{
 /* PArtie principale  */
 h1{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     font-weight: 800;
+    padding: 25px;
 }
 .cadreContact{
     margin: 180px;
@@ -78,4 +79,20 @@ select{
 }
 .error{
     color: red;
+}
+/*  Mise en page du footer  */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 35px;
+}
+.gras{
+    font-weight: 900;
+    font-size: 20px;
+}
+.miniEnv{
+    width: 15px;
 }
