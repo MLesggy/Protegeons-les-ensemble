@@ -3,7 +3,18 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  .manrope-uniquifier{
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+    color: inherit;
+}
 /*  Mise en page de la banniere de navigation  */
 
 header{
@@ -22,10 +33,10 @@ header p{
     margin-left: 35px;
 }
 .textHeader{
-    border: solid 4px blue;
     width: fit-content;
     word-spacing: 40px;
     margin-right: 30px;
+    color: white;
 }
 .btn{
     color: white;
@@ -49,7 +60,8 @@ h1{
 }
 .cadreContact{
     margin: 180px;
-    border: solid 4px black;
+    border: solid 1px lightgrey;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 30px;
