@@ -39,12 +39,25 @@ function don(){
     }
 }
 
+// Script pour la partie carroussel d'image 
+// on recuère les miniatures
+let miniature = document.querySelectorAll(".imgBox .swipe")
+// Pour chaque miniature je veux que dès que je clique elles obtienne l'attribut de l'image principale
+miniature.forEach(mini => {
+    mini.addEventListener("click",()=>{
+    let nouvelleImg = mini.getAttribute("src")
+    document.getElementById("imagePrincipale").setAttribute("src", nouvelleImg);
+// recuperer aussi les legendes des images ppur mettre le bon texte dessus à chaque changement
+    let nouveauNom= mini.getAttribute("data-name") // nouveau nom de l'image 
+    let nouvelleLegende = mini.getAttribute("data-caption"); // nouvelle phrase inspirante 
+// mise a jour dans le html avec concatenation
+    document.querySelector(".texte-sur-image").innerHTML = nouveauNom + "<br>" + nouvelleLegende
+})
+})
+
 // Script pour la partie Quizz 
+// /!\ Merite d'etre remanier car pas du tout opti. /!\
 
-
-
-
-let score = 0
 // recuperation des boutons correct/incorrect de la question 1 
 let mauvaise_reponse1 = document.getElementById("opt1")
 mauvaise_reponse1.addEventListener("click", ()=>{
@@ -57,7 +70,7 @@ let bonne_reponse1 = document.getElementById("opt2")
 bonne_reponse1.addEventListener("click", ()=>{
     bonne_reponse1.classList.remove("btnQuizz")
     bonne_reponse1.classList.add("btnQuizzCorrect")
-    return score++ 
+
 })
 // Recuperation des boutons correct/incorrect de la question 2
 let mauvaise_reponse2= document.getElementById("opt3")
@@ -71,7 +84,7 @@ let bonne_reponse2= document.getElementById("opt4")
 bonne_reponse2.addEventListener("click", ()=>{
     bonne_reponse2.classList.remove("btnQuizz")
     bonne_reponse2.classList.add("btnQuizzCorrect")
-    return score ++
+
 })
 //recuperation des boutons correct/incorrect de la question 3
 let mauvaise_reponse3 = document.getElementById("opt5")
@@ -85,19 +98,11 @@ let bonne_reponse3= document.getElementById("opt6")
 bonne_reponse3.addEventListener("click", ()=>{
     bonne_reponse3.classList.remove("btnQuizz")
     bonne_reponse3.classList.add("btnQuizzCorrect")
-    score ++ 
+
 })
 
 
 
-// document.getElementById("resultQuiz").innerHTML = "Ton score est de : " + score + "/3"
 
 
 
-
-
-// document.querySelectorAll(".tailleMin").forEach(image => {
-    //image.addEventListener("click", function() {
-    //    document.getElementById("imagePrincpiale").src = this.src;
-   // });
-// });
