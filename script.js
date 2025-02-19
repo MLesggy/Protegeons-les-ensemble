@@ -5,11 +5,11 @@
 // D'abord les boutons avec les valeurs des dons 
 const buttonClique = document.querySelectorAll(".cadreDon .btnDon")
 buttonClique.forEach(button =>{
-        button.addEventListener('click', ()=>{
-        buttonClique.forEach(btn => btn.classList.remove("selected"));
-        button.classList.add("selected")
-        don()
-    })
+    button.addEventListener('click', ()=>{
+    buttonClique.forEach(btn => btn.classList.remove("selected"));
+    button.classList.add("selected")
+    don()
+})
 })
 // Ensuite les boutons avec les temporalités
 const tempsClique = document.querySelectorAll(".cadreTemps .btnTemps")
@@ -25,8 +25,8 @@ let validerDon= document.getElementById("validerDon")
 validerDon.addEventListener("click", ()=>{
     alert("♡ Les animaux vous disent merci pour votre don! ♡ ");
 })
-function don(){
 
+function don(){
     // recuperation des boutons séléctionnés
     let donSelected = document.querySelector(".cadreDon .btnDon.selected")
     let tempsChoisis= document.querySelector(".cadreTemps .btnTemps.selected")
