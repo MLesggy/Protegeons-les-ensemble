@@ -395,31 +395,36 @@ footer{
 
 /*  Mise en forme du header responssive */
 
+
 header{
     flex-direction: column;
-    justify-content: space-between;
-}
-header img{
-    transform: rotate(45deg);
+    justify-content: flex-start;
+    padding: 10px;
 }
 header p{
-    margin-left: 5px;
+    margin-left: 0;
 }
 .textHeader{
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    gap: 15px;
-    margin-right: 0px;
+    gap:10px;
+    width: 85%;
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-right: 0;
     align-items: flex-start;
-    align-content: center;
-    margin: 30px;
+    align-content: flex-start;
 }
 .btn{
+    border-radius: 5px;
+    padding: 5px;
     width: 100%;
-    margin: 2px;
+    margin: 3px;
+}  
+.headerG{
+    margin: 5px;
+    margin-left: 15px;
 }
-
 /*  Mise en page responssive de la première partie avec l'image des chiens qui courent  */
 
 .imageFiltree p,
@@ -454,7 +459,6 @@ p{
     align-items: center;
     padding: 10px;
     width: 100%;
-
 }
 /*  Mise en page responssive de la 4eme partie: mission */
 
@@ -490,7 +494,6 @@ p{
     height: 400px;
 }
 .texte-sur-image{
-
     bottom: 3%;
     left: 5%;
     font-size: 24px;
@@ -520,7 +523,6 @@ p{
     height: 40px;
     margin: 3px;
 }
-
 .btnQuizzCorrect{
     width: 360px;
     height: 40px;  
