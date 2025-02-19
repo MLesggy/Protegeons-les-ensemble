@@ -39,6 +39,7 @@ header p{
     word-spacing: 40px;
     margin-right: 30px;
     color: white;
+    align-self: center;
 }
 .btn{
     color: white;
@@ -51,14 +52,13 @@ header p{
 }
 .headerG{
     margin: 25px;
-
 }
 /* PArtie principale  */
 h1{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30px;
     font-weight: 800;
-    padding: 25px;
+
 }
 .cadreContact{
     margin: 180px;
@@ -111,4 +111,61 @@ footer{
 }
 .miniEnv{
     width: 15px;
+}
+
+/*  Media queries */
+
+@media screen and (max-width: 600px){
+/*  Mise en forme responssive du header  */
+
+header{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+header p{
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 0;
+}
+.textHeader{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 85%;
+    word-spacing: 40px;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+.btn{
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 700;
+    width: 100%;
+    margin: 3px;
+}
+.headerG{
+    margin: 5px;
+    margin-left: 15px;
+}
+
+/* Maise en page responssive du formulaire de contact  */
+
+.cadreContact{
+    margin: 10px;
+}
+/*  Mise en page responssive du footer  */
+
+footer{
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    gap:20px;
+}
+.gras{
+    font-size: 15px;
+}
+.miniEnv{
+    width: 8px;
+}
 }
