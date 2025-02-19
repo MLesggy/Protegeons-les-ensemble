@@ -1,3 +1,4 @@
+/* Settings */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,9 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 /*  Mise en forme du header  */
+
 header{
     background-color: #057858;
     display: flex;
@@ -82,6 +85,7 @@ p{
 .centrer{
     text-align: center;
 }
+
 /* Mise en page de la deuxième section, celle pour le don  */
 
 .sectionDon{
@@ -150,7 +154,9 @@ h2{
     font-weight: 700;
     cursor: pointer;
 }
-/* Mise en page de la deuxième section, celle de la mission de l'asso */
+
+/* Mise en page de la troisième section, celle de la mission de l'asso */
+
 .mission{
     background-color: #EDFDF4;
     margin-top: 60px ;
@@ -178,30 +184,77 @@ h2{
     font-size: 30px;
     text-align: start;
 }
+
 /*  Mise en page de la quatrième section avec le carrousel d'image  */
+
 .conteneurGalerie{
-    border: solid 4px cyan;
-    display: flex;
+    margin-bottom: 10px;
     justify-content: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 .imagePrincipale{
-    width: 60%;
+    display: block;
+    width: 87%;
+    height: 700px; 
+    border-radius: 10px;
+    filter:brightness(60%);
+    cursor: pointer;
+    object-fit: cover;
+}
+.texte-sur-image{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 20px;
 }
 .miniature{
-    border: solid, 4px red;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px
+    gap: 20px;
 }
-.miniature img{
-    width: 250px;
-    height: 120px;
+.swipe{
+
+}
+.imgBox{
+    position: relative; 
+    width: 419px;
+    height: 150px;
+    cursor: pointer;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
+    filter: brightness(70%);
 }
+.texte-sur-imageMinuature {
+    position: absolute;
+    bottom: 48%;
+    left: 40%;
+    color: white;
+    font-size: 20px;  
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*  Div vide pour creer un espace entre deux sections */
 .espace{
     padding: 50px;
 }
+
 /*  Mise en forme de la cinquième section: quizz */
 
 .quizz{
@@ -295,12 +348,13 @@ h2{
     height: 370px;
     width: 350px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
-
 }
 .texteTemoignage{
     padding: 10px;
 }
+
 /*  Mise en forme du footer */
+
 footer{
     background-color: #1F2632;
     color: white;
