@@ -106,9 +106,9 @@ p{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     margin: 150px;
 }
 h2{
@@ -120,7 +120,7 @@ h2{
 }
 .cadreDon{
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 .don{
     font-weight: 900;
@@ -128,10 +128,10 @@ h2{
 .btnDon{
     background-color: white;
     border: solid 2px #D9D9D9;
-    padding: 20px;
+    padding: 30px;
     width: fit-content;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
 }
 .cadreDon .btnDon:hover {
@@ -167,6 +167,7 @@ h2{
     padding: 10px;
     font-weight: 700;
     cursor: pointer;
+    width: 600px;
 }
 
 /* Mise en page de la troisième section, celle de la mission de l'asso */
@@ -483,8 +484,6 @@ p{
 }
 
 /*  Mise en page responssive de la section 5: carroussel */
-
-
 .conteneurGalerie{
     flex-direction: column;
 }
@@ -494,6 +493,7 @@ p{
     height: 400px;
 }
 .texte-sur-image{
+
     bottom: 3%;
     left: 5%;
     font-size: 24px;
@@ -523,6 +523,7 @@ p{
     height: 40px;
     margin: 3px;
 }
+
 .btnQuizzCorrect{
     width: 360px;
     height: 40px;  
