@@ -18,16 +18,14 @@
 /*  Mise en forme du header  */
 header{
     background-color: #057858;
-    border: solid 4px black;
     display: flex;
     justify-content: flex-end;
     gap: 40px;
 }
 .textHeader{
-    border: solid 4px blue;
     color: white;
     width: fit-content;
-    align-self:flex-end;
+    align-self:center;
     margin: 15px;
     word-spacing: 20px;
 }
@@ -87,11 +85,13 @@ p{
 /* Mise en page de la deuxième section, celle pour le don  */
 
 .sectionDon{
-    border: solid 4px yellow;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+   justify-content: center;
+    align-items: center;
     padding: 50px;
+    margin: 150px;
 }
 h2{
     color: black;
@@ -101,8 +101,7 @@ h2{
     margin-bottom: 40px;
 }
 .cadreDon{
-    border: solid 4px orangered;
-    align-self: center;
+    align-items: center;
     padding: 10px;
 }
 .don{
@@ -133,10 +132,6 @@ h2{
 }
 
 .cadreTemps{
-    border: solid 4px blue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 100px;
 }
 .btnTemps{
@@ -145,14 +140,12 @@ h2{
     margin: 15px;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
 }
 .validerDon{
-    align-items: center;
     background-color: red;
+    border: none;
     color: white;
-    width: 45%;
-    position: absolute;
-    left: 28%;
     padding: 10px;
     font-weight: 700;
     cursor: pointer;
@@ -161,22 +154,22 @@ h2{
 .mission{
     background-color: #EDFDF4;
     margin-top: 60px ;
-    border: solid 4px black;
 }
 .notreMission{
     padding: 100px;
     display: flex;
-    border: solid 4px purple;
-  
 }
 .notreMission img{
     border-radius: 20px 0 0 20px;
 }
+.notreMission p {
+    font-size: 17px;
+}
 .formPara{
-    border: solid 4px red;
     background-color: white;
     border-radius: 0 20px 20px 0;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     text-align: start;
 }
@@ -216,7 +209,6 @@ h2{
 }
 
 .boxQuizz{
-    border: solid 4px orange;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,7 +232,7 @@ h2{
     display: block;
 }
 .btnQuizzCorrect{
-    background-color:  #EDFDF4;
+    background-color: #6ACF6E;
     align-self: center;
     padding: 12px;
     font-size: 10px;
@@ -252,9 +244,16 @@ h2{
 }
 .btnQuizzFalse{
     background-color: lightcoral;
+    align-self: center;
+    padding: 12px;
+    font-size: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 370px;
+    height: 50px;
+    cursor: pointer;
 }
 .question1{
-    border: solid 4px blueviolet;
     background-color: white;
     padding: 20px;
     align-self: center;
@@ -301,3 +300,21 @@ h2{
 .texteTemoignage{
     padding: 10px;
 }
+/*  Mise en forme du footer */
+footer{
+    background-color: #1F2632;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 35px;
+}
+.gras{
+    font-weight: 900;
+    font-size: 20px;
+}
+.miniEnv{
+    width: 15px;
+}
+
+@media 
