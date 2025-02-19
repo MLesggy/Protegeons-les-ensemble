@@ -1,82 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    </head>
 
-</head>
-<body>
+    <body>
 
-    <header> 
-        <div class="headerG manrope-uniquifier"> 
-        
-        <p> <img src="./Images/logo-icon.png" alt="icone d'une patte de chien ">    Quatre Pattes</p>
-        
-        </div>
+        <header> 
+
+            <div class="headerG manrope-uniquifier">    
+                <p> 
+                    <img src="./Images/logo-icon.png" alt="icone d'une patte de chien ">    
+                    Quatre Pattes
+                </p>
+            </div>
        
-
-        <div class="textHeader manrope-uniquifier"> 
-            <a href="index.html"> Acceuil  </a> 
-            <a href="page2.html"> Contact </a>
-         <button class="btn manrope-uniquifier">♡ Faire un don </button>
-    </div>
-    </header>
+            <div class="textHeader manrope-uniquifier"> 
+                <a href="index.html">Acceuil</a> 
+                <a href="page2.html">Contact</a>
+                <button class="btn manrope-uniquifier">
+                     ♡ Faire un don 
+                </button>
+            </div>
+        </header>
     
-<!--  Section principale, cadre de contact  -->
-  <h1 class="manrope-uniquifier"> Contactez nous </h1>
-<section class="cadreContact"> 
+        <!--  Section principale, cadre de contact  -->
 
-    <label for="Nom" class="manrope-uniquifier"> Nom</label><br>
-    <input class="caseForm" type="text" id="Nom"><br>
-    <div class="error" id="nom_error"> </div>
+        <h1 class="manrope-uniquifier"> 
+            Contactez nous 
+        </h1>
 
-    <label for="Email" class="manrope-uniquifier"> Email </label><br>
-    <input class="caseForm" type="text" id="Email"><br>
-    <div class="error" id="email_error"> </div>
+        <section class="cadreContact"> 
 
-    <label for="Sujet" class="manrope-uniquifier"> Sujet</label><br>
-    <select name="sujet" id="">
-        <option value=""> Question sur les dons</option>
-        <option value=""> Question sur l'adoption </option>
-        <option value=""> A propos de l'association </option>
-        <option value=""> Comment devenir bénévole </option>
-    </select><br>
+            <label for="Nom" class="manrope-uniquifier"> 
+                Nom
+            </label><br>
+            <input class="caseForm" type="text" id="Nom"><br>
+            <div class="error" id="nom_error"></div>
 
-    <label for="message" class="manrope-uniquifier"> Message </label><br>
-    <input class="caseMess" type="text" id="message"><br>
-    <div class="error" id="message_error"> </div>
+            <label for="Email" class="manrope-uniquifier"> 
+                Email 
+            </label><br>
+            <input class="caseForm" type="text" id="Email"><br>
+            <div class="error" id="email_error"></div>
 
-    <button class="btnVert manrope-uniquifier" id="envoyer"> ➣ Envoyer </button>
-</section>
+            <label for="Sujet" class="manrope-uniquifier"> 
+                Sujet
+            </label><br>
+            <select name="sujet" id="">
+                <option value=""> 
+                    Question sur les dons
+                </option>
+                <option value=""> 
+                    Question sur l'adoption 
+                </option>
+                <option value=""> 
+                    A propos de l'association 
+                </option>
+                <option value=""> 
+                    Comment devenir bénévole
+                </option>
+            </select><br>
 
-<footer> 
+            <label for="message" class="manrope-uniquifier"> 
+                Message 
+            </label><br>
+            <input class="caseMess" type="text" id="message"><br>
+            <div class="error" id="message_error"></div>
 
-    <div> 
-        <p> <span class="gras"> Quatre Pattes </span> <br><br>
-         Ensembme protegeons les animaux et <br> donnons-leur une meilleure vie </p>
-    </div>
-    <div> 
-        <p class="gras"> Contact</p> <br><br>
-        <p> <img class="miniEnv" src="./Images/mail-icon.png" alt="logo d'une enveloppe"> contact@quatrepattes.org</p>
-    </div>
-<div> 
-    <p class="gras"> Suivez nous</p>
-</div>
+            <button class="btnVert manrope-uniquifier" id="envoyer"> 
+                ➣ Envoyer 
+            </button>
+        </section>
 
-</footer>
+        <footer> 
 
+            <div> 
+                <p><span class="gras"> 
+                    Quatre Pattes </span><br><br>
+                    Ensembme protegeons les animaux et <br> donnons-leur une meilleure vie 
+                </p>
+            </div>
+            <div> 
+                <p class="gras"> 
+                    Contact
+                </p><br><br>
+                <p> 
+                    <img class="miniEnv" src="./Images/mail-icon.png" alt="logo d'une enveloppe"> 
+                    contact@quatrepattes.org
+                </p>
+            </div>
+            <div> 
+                <p class="gras"> 
+                    Suivez nous
+                </p>
+            </div>
+        </footer>
 
-
-
-
-
-<script src="script2.js"> </script>
-
-
-</body>
+        <script src="script2.js"> </script>
+    </body>
 </html>
