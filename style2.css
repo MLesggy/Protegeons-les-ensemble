@@ -1,9 +1,10 @@
+/* Settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  .manrope-uniquifier{
+.manrope-uniquifier{
     font-family: "Manrope", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -15,6 +16,7 @@ a:active {
     text-decoration: none !important;
     color: inherit;
 }
+
 /*  Mise en page de la banniere de navigation  */
 
 header{
@@ -92,7 +94,9 @@ select{
 .error{
     color: red;
 }
+
 /*  Mise en page du footer  */
+
 footer{
     background-color: black;
     color: white;
