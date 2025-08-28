@@ -3,10 +3,6 @@
 
 # Projet Quatre Pattes - Site Web Vitrine
 
-## Contexte du Projet
-
-Projet réalisé dans le cadre d'une évaluation de l'école Simplon 
-
 
 ### Contexte Client
 
